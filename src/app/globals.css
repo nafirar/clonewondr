@@ -1,1 +1,78 @@
 @import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.perspective-container {
+  perspective: 1000px; /* Adjust as needed */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Important: ensures front/back fill the space */
+  text-align: center;
+  transition: transform 0.6s; /* Adjust duration as needed */
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute; /* Overlays them within flip-card-inner */
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* THIS IS THE KEY TO HIDE THE FLIPPED SIDE */
+  /* Add any common styling for both faces here, e.g., background-color, border-radius */
+  background-color: #f7f7f7; /* Assuming 'off-white' is this or similar */
+  border-radius: 1.5rem; /* For rounded-3xl */
+}
+
+.flip-card-front {
+  transform: rotateY(0deg); /* Explicitly front-facing */
+}
+
+.flip-card-back {
+  transform: rotateY(180deg); /* Start rotated for the back face */
+}
+
+/* When expanded, rotate the inner container */
+.flip-card-inner.is-expanded {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  background-color: white;
+}
+.flip-card-back {
+  background-color: white;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.swiper-slide {
+  width: auto !important;
+  display: flex !important;
+  height: auto !important;
+  justify-content: center;
+  align-items: center;
+}
