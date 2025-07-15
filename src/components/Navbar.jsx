@@ -3,10 +3,7 @@
 import React from "react";
 import { ChevronDown, Menu } from "lucide-react";
 
-const navItems = [
-  { label: "Fitur" },
-  { label: "Info" },
-];
+const navItems = [{ label: "Fitur" }, { label: "Info" }];
 
 const Navbar = () => {
   return (
@@ -23,7 +20,7 @@ const Navbar = () => {
             />
           </a>
 
-          {/* Navigation Items */}
+          {/* Navigation*/}
           <div className="flex gap-6">
             {navItems.map((item, index) => (
               <div
@@ -31,7 +28,10 @@ const Navbar = () => {
                 className="text-black flex items-center gap-[14px] font-semibold text-base px-6 py-[18px] border-b-[4px] cursor-pointer transition-all duration-500 origin-top border-transparent hover:text-orange-500"
               >
                 <span>{item.label}</span>
-                <ChevronDown className="w-4 h-4 transition-transform duration-500" strokeWidth={3} />
+                <ChevronDown
+                  className="w-4 h-4 transition-transform duration-500"
+                  strokeWidth={3}
+                />
               </div>
             ))}
           </div>
@@ -47,8 +47,12 @@ const Navbar = () => {
           </button>
           <div className="flex items-center space-x-1">
             <div className="flex items-center divide-x divide-[#7A7A7A]">
-              <button className="text-[16px] leading-[24px] font-semibold pe-2 text-[#141414]">ID</button>
-              <button className="text-[16px] leading-[24px] font-semibold ps-2 text-[#8c8c8c]">EN</button>
+              <button className="text-[16px] leading-[24px] font-semibold pe-2 text-[#141414]">
+                ID
+              </button>
+              <button className="text-[16px] leading-[24px] font-semibold ps-2 text-[#8c8c8c]">
+                EN
+              </button>
             </div>
           </div>
         </div>
