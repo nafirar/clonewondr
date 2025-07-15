@@ -1,8 +1,11 @@
-import Nafira from "@/components/Nafira";
-import Image from "next/image";
+import InvesmentIntro from "@/components/InvesmentIntro";
+import FinancialDimensions from "@/components/FinancialDimensions";
 
 export default function Home() {
   return (
-    <Nafira/>
+    <>
+      <FinancialDimensions />
+      <InvesmentIntro />
+    </>
   );
 }
