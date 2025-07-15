@@ -18,6 +18,6 @@ export default function Home() {
       <Loans />
       <Join />
       <Footer />
-    </>
-  );
+    </>
+  );
 }
