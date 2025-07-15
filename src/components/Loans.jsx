@@ -3,7 +3,7 @@ export default function Loans() {
     <section className="py-10 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="mb-12 text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-black leading-tight tracking-normal">
             Pinjaman fleksibel, akses cepat, bunga bersahabat!
           </h2>
         </div>
@@ -15,11 +15,10 @@ export default function Loans() {
                 Ubah Cicilan
               </h3>
               <h2 className="text-xl md:text-3xl font-semibold text-black">
-                Ubah Tagihan Kamu!
+                Bayar tagihan jadi ringan
               </h2>
               <p className="text-sm md:text-base text-black font-normal">
-                Punya tagihan yang besar? Yuk ubah menjadi cicilan dengan tenor
-                yang sesuai kebutuhan kamu.
+                Punya tagihan yang besar? Jadiin lebih enteng dengan ubah ke cicilan. Tersedia pilihan tenor hingga 12 bulan.
               </p>
             </div>
             <div className="relative">
@@ -38,11 +37,10 @@ export default function Loans() {
                 Card to Cash
               </h3>
               <h2 className="text-xl md:text-3xl font-semibold text-black">
-                Dapetin Kartu Kredit BNI!
+                Pinjam dana dari limit kartu kredit
               </h2>
               <p className="text-sm md:text-base text-black font-normal">
-                Ajukan secara mudah dan cepat lewat wondr dan nikmatin segala
-                benefitnya. Ajukan kartu kredit via wondr.
+                Dapetin akses pinjaman dana tunai dari limit kartu kreditmu—langsung cair ke rekening.
               </p>
             </div>
             <div className="relative">
