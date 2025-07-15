@@ -20,7 +20,7 @@ const Navbar = () => {
             />
           </a>
 
-          {/* Navigation Items */}
+          {/* Navigation*/}
           <div className="flex gap-6">
             {navItems.map((item, index) => (
               <div
