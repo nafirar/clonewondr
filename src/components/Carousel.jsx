@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const SimpleCarousel = () => {
+const Carousel = () => {
   const images = [
     "https://wondr.bni.co.id/_next/image?url=%2Fapi%2Fimage%2Fbanner_1_1751643019762.png&w=1920&q=75",
     "https://wondr.bni.co.id/_next/image?url=%2Fapi%2Fimage%2Fbanner_2_1751643120295.png&w=1920&q=75",
@@ -48,4 +47,4 @@ const SimpleCarousel = () => {
   );
 };
 
-export default SimpleCarousel;
+export default Carousel;

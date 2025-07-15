@@ -1,6 +1,4 @@
-import React from 'react'
-
-export default function Pinjaman() {
+export default function Loans() {
   return (
     <section className="py-10 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4">
@@ -13,10 +11,15 @@ export default function Pinjaman() {
           {/* Ubah Cicilan */}
           <div className="bg-[#E5D9FF] rounded-2xl lg:rounded-3xl flex flex-col overflow-hidden">
             <div className="p-6 lg:p-8 space-y-4">
-              <h3 className="text-sm md:text-base text-black font-light">Ubah Cicilan</h3>
-              <h2 className="text-xl md:text-3xl font-semibold text-black">Ubah Tagihan Kamu!</h2>
+              <h3 className="text-sm md:text-base text-black font-light">
+                Ubah Cicilan
+              </h3>
+              <h2 className="text-xl md:text-3xl font-semibold text-black">
+                Ubah Tagihan Kamu!
+              </h2>
               <p className="text-sm md:text-base text-black font-normal">
-                Punya tagihan yang besar? Yuk ubah menjadi cicilan dengan tenor yang sesuai kebutuhan kamu.
+                Punya tagihan yang besar? Yuk ubah menjadi cicilan dengan tenor
+                yang sesuai kebutuhan kamu.
               </p>
             </div>
             <div className="relative">
@@ -31,10 +34,15 @@ export default function Pinjaman() {
           {/* Card to Cash */}
           <div className="bg-[#E5D9FF] rounded-2xl lg:rounded-3xl flex flex-col overflow-hidden">
             <div className="p-6 lg:p-8 space-y-4">
-              <h3 className="text-sm md:text-base text-black font-light">Card to Cash</h3>
-              <h2 className="text-xl md:text-3xl font-semibold text-black">Dapetin Kartu Kredit BNI!</h2>
+              <h3 className="text-sm md:text-base text-black font-light">
+                Card to Cash
+              </h3>
+              <h2 className="text-xl md:text-3xl font-semibold text-black">
+                Dapetin Kartu Kredit BNI!
+              </h2>
               <p className="text-sm md:text-base text-black font-normal">
-                Ajukan secara mudah dan cepat lewat wondr dan nikmatin segala benefitnya. Ajukan kartu kredit via wondr.
+                Ajukan secara mudah dan cepat lewat wondr dan nikmatin segala
+                benefitnya. Ajukan kartu kredit via wondr.
               </p>
             </div>
             <div className="relative">
@@ -48,5 +56,5 @@ export default function Pinjaman() {
         </div>
       </div>
     </section>
-  )
+  );
 }
