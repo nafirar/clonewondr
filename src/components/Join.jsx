@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Udahsiap() {
+export default function Join() {
   return (
     <div className="bg-lime-200 relative pt-6 lg:pt-[72px]">
       <div className="max-w-[1200px] mx-auto px-4">

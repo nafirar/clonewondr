@@ -5,6 +5,7 @@ import Insight from "@/components/Insight";
 import Navbar from "@/components/Navbar";
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
+import Join from "@/components/Join";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Insight />
       <InvesmentIntro />
       <Loans />
+      <Join />
       <Footer />
     </>
   );
