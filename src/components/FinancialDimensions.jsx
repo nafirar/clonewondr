@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Nafira() {
+export default function FinancialDimensions() {
     return (
         <section className="py-10 md:py-[72px] bg-off-white">
             <div className="container-120 mx-auto text-center px-4">
@@ -79,4 +79,3 @@ function Nafira() {
     );
 }
 
-export default Nafira;
