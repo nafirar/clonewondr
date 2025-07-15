@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ChevronDown, Menu } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 const navItems = [{ label: "Fitur" }, { label: "Info" }];
 

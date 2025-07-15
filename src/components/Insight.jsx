@@ -1,4 +1,4 @@
-export default function Investasi() {
+export default function Insight() {
   return (
     <section className="py-6 xl:px-[200px] md:pt-9 md:pb-[72px] bg-white">
       <div className="px-6">
