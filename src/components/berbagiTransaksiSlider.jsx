@@ -3,73 +3,67 @@
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BerbagiTransaksiCard from "./berbagiTransaksiCard";
+import { useTranslations } from "next-intl";
 
 export default function BerbagiTransaksiSwiper() {
+  const t = useTranslations("fiturs");
   const cardsData = [
     {
       id: "transfer", // Unique ID for key prop
-      title: "Transfer",
-      frontDescription: "Kirim uang kapan aja, ke mana aja",
-      backDescription:
-        "Kirim uang ke mana aja dan atur jadwal transfer sesuai maumu. Bisa transfer ke banyak tujuan sekaligus!",
+      title: t("fitur1.title"),
+      frontDescription: t("fitur1.frontDescription"),
+      backDescription: t("fitur1.backDescription"),
       image: "https://wondr.bni.co.id/api/image/layer_1_1751485455683.png",
     },
     {
       id: "mobile-tunai",
-      title: "Mobile Tunai",
-      frontDescription: "Tarik tunai bisa tanpa kartu",
-      backDescription:
-        "Gak bawa kartu? Gak masalah! Cukup buka aplikasi, tarik tunai segampang itu.",
+      title: t("fitur2.title"),
+      frontDescription: t("fitur2.frontDescription"),
+      backDescription: t("fitur2.backDescription"),
       image:
         "https://wondr.bni.co.id/api/image/group_427323199_1751485555775.png",
     },
     {
       id: "e-wallet",
-      title: "E-Wallet",
-      frontDescription: "Cek dan top up saldo gak perlu pindah aplikasi",
-      backDescription:
-        "Gak perlu buka aplikasi, top up dan cek saldo e-Wallet bisa langsung di sini",
+      title: t("fitur3.title"),
+      frontDescription: t("fitur3.frontDescription"),
+      backDescription: t("fitur3.backDescription"),
       image: "https://wondr.bni.co.id/api/image/illustration_1751485629668.png",
     },
     {
       id: "transfer-luar-negri",
-      title: "Transfer Luar Negri",
-      frontDescription: "Kirim uang antar negara dalam hitungan menit",
-      backDescription:
-        "Transfer ke berbagai negara gak perlu nunngu lama. Bisa cek status pengiriman juga.",
+      title: t("fitur4.title"),
+      frontDescription: t("fitur4.frontDescription"),
+      backDescription: t("fitur4.backDescription"),
       image: "https://wondr.bni.co.id/api/image/layer_4_1751485713019.png",
     },
     {
       id: "lifestyle",
-      title: "LifeStyle",
-      frontDescription: "Ada tiket konser, undian, sampai tiket kereta api",
-      backDescription:
-        "Dari tiket kereta api, tiket konser, sampai undian berhadiah tersedia buat kamu.",
+      title: t("fitur5.title"),
+      frontDescription: t("fitur5.frontDescription"),
+      backDescription: t("fitur5.backDescription"),
       image: "https://wondr.bni.co.id/api/image/left_arm_1751546357234.png",
     },
     {
       id: "Bayar-Beli",
-      title: "Bayar & Beli",
-      frontDescription: "Bisa bayar tagihan di puluhan layanan",
-      backDescription:
-        "Satu tempat bisa buat beli pulsa, bayar listrik, sampai zakat. Ada pengingat biar gak kelewat!",
+      title: t("fitur6.title"),
+      frontDescription: t("fitur6.frontDescription"),
+      backDescription: t("fitur6.backDescription"),
       image: "https://wondr.bni.co.id/api/image/billpay_1751635640586.png",
     },
     {
       id: "QRIS",
-      title: "QRIS",
-      frontDescription: "Tinggal scan atau tap buat bayar-bayar",
-      backDescription:
-        "Bayar ini itu jadi bebas repot, bebas antri, tetap aman, dan praktis.",
+      title: t("fitur7.title"),
+      frontDescription: t("fitur7.frontDescription"),
+      backDescription: t("fitur7.backDescription"),
       image:
         "https://wondr.bni.co.id/api/image/group_427323200_1751485932741.png",
     },
     {
       id: "TapCash",
-      title: "TapCash",
-      frontDescription: "Bayar tol sampai parkir tinggal tap aja",
-      backDescription:
-        "Tinggal tempelin kartu ke HP buat cek dan isi saldo. Pakai Express Top Up bisa tanpa login.",
+      title: t("fitur8.title"),
+      frontDescription: t("fitur8.frontDescription"),
+      backDescription: t("fitur8.backDescription"),
       image: "https://wondr.bni.co.id/api/image/tapcash_new_1751635836436.png",
     },
   ];
@@ -77,7 +71,7 @@ export default function BerbagiTransaksiSwiper() {
     <section className="py-8 md:py-72 bg-white">
       <div className="container-72 text-center">
         <h2 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] !leading-snug lg:!leading-tight text-black text-center font-demibold  ">
-          Berbagai transaksi cukup satu aplikasi
+          {t("title")}
         </h2>
       </div>
       <div className="text-center">

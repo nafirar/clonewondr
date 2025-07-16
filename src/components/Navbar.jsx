@@ -1,14 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import {
-  Menu,
-  X,
-  Download,
-  Globe,
-  Search,
-  ChevronDown,
-} from "lucide-react";
+import { Menu, X, Download, Globe, Search, ChevronDown } from "lucide-react";
 import Link from "next/link";
 
 const navItems = [{ label: "Fitur" }, { label: "Info" }];
@@ -21,7 +14,9 @@ const InfoCards = () => (
         <ul className="list-disc list-inside space-y-3 text-sm text-gray-700">
           <li>Metode transfer apa saja yang bisa dipilih?</li>
           <li>Di mana saya bisa bertransaksi menggunakan QRIS?</li>
-          <li>Apakah terdapat biaya transaksi saat menggunakan fitur Bayar & Beli?</li>
+          <li>
+            Apakah terdapat biaya transaksi saat menggunakan fitur Bayar & Beli?
+          </li>
         </ul>
         <a
           href="#"
@@ -112,10 +107,10 @@ const NavbarCards = () => {
   );
 };
 
-const Navbar = () => {
+const Navbar = ({ onToggleLanguage, currentLocale }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState("ID");
+  // const [currentLanguage, setCurrentLanguage] = useState("ID");
   const [showDropdown, setShowDropdown] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const dropdownRef = useRef(null);
@@ -141,21 +136,15 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
-  const toggleLanguage = () => {
-    setCurrentLanguage((prev) => (prev === "ID" ? "EN" : "ID"));
-  };
-
-  const handleDropdownClick = (item) => {
-    const isActive = activeDropdown === item.label;
-    setActiveDropdown(isActive ? null : item.label);
-    setShowDropdown(item.label === "Fitur" && !isActive);
-  };
-
+  // const toggleLanguage = () => {
+  //   setCurrentLanguage((prev) => (prev === "ID" ? "EN" : "ID"));
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-white shadow-sm"
+          isScrolled
+            ? "bg-white/95 backdrop-blur-md shadow-lg"
+            : "bg-white shadow-sm"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16 lg:h-20">
@@ -218,11 +207,14 @@ const Navbar = () => {
               <span className="xl:hidden">Download</span>
             </button>
             <button
-              onClick={toggleLanguage}
-              className="flex items-center gap-2 px-3 py-2 text-sm font-semibold text-gray-700 hover:text-orange-500 bg-gray-100 hover:bg-gray-200 rounded-lg transition"
+              onClick={onToggleLanguage}
+              className="flex items-center gap-2 px-3 py-2 text-sm font-semibold text-gray-700 hover:text-orange-500 bg-gray-100 hover:bg-gray-200 rounded-lg transition-all duration-300"
+              aria-label={`Switch to ${
+                currentLocale === "ID" ? "English" : "Indonesian"
+              }`}
             >
               <Globe className="w-4 h-4" />
-              {currentLanguage}
+              {currentLocale}
             </button>
           </div>
 
@@ -263,11 +255,11 @@ const Navbar = () => {
                 Download Sekarang
               </button>
               <button
-                onClick={toggleLanguage}
-                className="flex items-center gap-2 w-full justify-center px-4 py-2 text-sm font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition"
+                onClick={onToggleLanguage}
+                className="flex items-center gap-2 w-full justify-center px-4 py-2 text-sm font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-all duration-300"
               >
                 <Globe className="w-4 h-4" />
-                {currentLanguage}
+                {currentLocale}
               </button>
             </div>
           </div>
@@ -278,5 +270,11 @@ const Navbar = () => {
   );
 };
 
+const handleDropdownClick = (item) => {
+  const isActive = activeDropdown === item.label;
+  setActiveDropdown(isActive ? null : item.label);
+  setShowDropdown(item.label === "Fitur" && !isActive);
+  // };
+};
+
 export default Navbar;
--

@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { NextIntlClientProvider, useTranslations } from "next-intl";
 
-import enMessages from "../../messages/en.json";
-import inMessages from "../../messages/id.json";
+import enMessages from "../../../messages/en.json";
+import inMessages from "../../../messages/id.json";
 
 const messages = {
   en: enMessages,

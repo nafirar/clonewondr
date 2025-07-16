@@ -1,0 +1,79 @@
+{
+  "About": {
+    "title": "Tentang (Implementasi Next/Intl)",
+    "description": "Halo dunia!"
+  },
+  "fiturs": {
+    "title": "Berbagai transaksi cukup satu aplikasi",
+    "fitur1": {
+      "title": "Transfer",
+      "frontDescription": "Kirim uang kapan aja, ke mana aja",
+      "backDescription": "Kirim uang ke mana aja dan atur jadwal transfer sesuai maumu. Bisa transfer ke banyak tujuan sekaligus!"
+    },
+    "fitur2": {
+      "title": "Mobile Tunai",
+      "frontDescription": "Tarik tunai bisa tanpa kartu",
+      "backDescription": "Gak bawa kartu? Gak masalah! Cukup buka aplikasi, tarik tunai segampang itu."
+    },
+    "fitur3": {
+      "title": "E-Wallet",
+      "frontDescription": "Cek dan top up saldo gak perlu pindah aplikasi",
+      "backDescription": "Gak perlu buka aplikasi, top up dan cek saldo e-Wallet bisa langsung di sini"
+    },
+    "fitur4": {
+      "title": "Transfer Luar Negri",
+      "frontDescription": "Kirim uang antar negara dalam hitungan menit",
+      "backDescription": "Transfer ke berbagai negara gak perlu nunngu lama. Bisa cek status pengiriman juga."
+    },
+    "fitur5": {
+      "title": "LifeStyle",
+      "frontDescription": "Ada tiket konser, undian, sampai tiket kereta api",
+      "backDescription": "Dari tiket kereta api, tiket konser, sampai undian berhadiah tersedia buat kamu."
+    },
+    "fitur6": {
+      "title": "Bayar & Beli",
+      "frontDescription": "Bisa bayar tagihan di puluhan layanan",
+      "backDescription": "Satu tempat bisa buat beli pulsa, bayar listrik, sampai zakat. Ada pengingat biar gak kelewat!"
+    },
+    "fitur7": {
+      "title": "QRIS",
+      "frontDescription": "Tinggal scan atau tap buat bayar-bayar",
+      "backDescription": "Bayar ini itu jadi bebas repot, bebas antri, tetap aman, dan praktis."
+    },
+    "fitur8": {
+      "title": "TapCash",
+      "frontDescription": "Bayar tol sampai parkir tinggal tap aja",
+      "backDescription": "Tinggal tempelin kartu ke HP buat cek dan isi saldo. Pakai Express Top Up bisa tanpa login."
+    }
+  },
+  "FinancialDimensions": {
+    "title": "Kenalan sama 3 dimensi keuangan",
+    "description": "wondr siap bantu di tiap dimensi keuanganmu: transaksi di masa kini, pantau alur keluar-masuk uang di masa lalu, sampai investasi untuk masa depan.",
+    "transaksiTitle": "Transaksi",
+    "transaksiDesc": "Berbagai kemudahan untuk kirim uang, belanja, hingga bayar tagihan.",
+    "insightTitle": "Insight",
+    "insightDesc": "Pantau pemasukan dan pengeluaran, jadi tahu rekomendasi keuangan yang cocok buat kamu.",
+    "growthTitle": "Growth",
+    "growthDesc": "Jaga nilai dan kembangin aset kamu dengan beragam instumen untuk masa depan terjamin."
+  },
+  "footer": {
+    "appStore": "Download di App Store",
+    "playStore": "Download di Play Store",
+    "informasi": "Butuh informasi lebih lanjut?",
+    "kantorPusat": "Kantor Pusat",
+    "license": "PT Bank Negara Indonesia (Persero) Tbk. Berizin dan diawasi oleh Otoritas Jasa Keuangan (OJK) & Bank Indonesia (BI) serta merupakan peserta penjaminan Lembaga Penjamin Simpanan (LPS).",
+    "copyRight": "© Hak Cipta 2025 PT. Bank Negara Indonesia (Persero), Tbk.",
+    "privacyPolicy": "Kebijakan Privasi",
+    "securityTips": "Tips Pengamanan Transaksi",
+    "tandc": "Syarat dan Ketentuan"
+  },
+  "Loans": {
+    "headline": "Pinjaman fleksibel, akses cepat, bunga bersahabat!",
+    "ubahTitle": "Ubah Cicilan",
+    "ubahHeading": "Bayar tagihan jadi ringan",
+    "ubahDesc": "Punya tagihan yang besar? Jadilin lebih enteng dengan ubah ke cicilan. Tersedia pilihan tenor hingga 36 bulan.",
+    "cashTitle": "Card to Cash",
+    "cashHeading": "Pinjam dana dari limit kartu kredit",
+    "cashDesc": "Dapetin akses pinjaman dana tunai dari limit kartu kreditmu—langsung cair ke rekening."
+  }
+}

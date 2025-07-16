@@ -1,0 +1,79 @@
+{
+  "About": {
+    "title": "About (Next/Intl implementation)",
+    "description": "Hello world!"
+  },
+  "fiturs": {
+    "title": "Various transactions, just one app",
+    "fitur1": {
+      "title": "Transfer",
+      "frontDescription": "Send money anytime, anywhere",
+      "backDescription": "Send money anywhere and set transfer schedules as you wish. You can transfer to multiple destinations at once!"
+    },
+    "fitur2": {
+      "title": "Mobile Cash",
+      "frontDescription": "Cash withdrawals without a card",
+      "backDescription": "Don't have your card? No problem! Just open the app, withdrawing cash is that easy."
+    },
+    "fitur3": {
+      "title": "E-Wallet",
+      "frontDescription": "Check and top up balance without switching apps",
+      "backDescription": "No need to open other apps, top up and check e-Wallet balances directly here."
+    },
+    "fitur4": {
+      "title": "International Transfer",
+      "frontDescription": "Send money between countries in minutes",
+      "backDescription": "Transfer to various countries without long waits. You can also check the delivery status."
+    },
+    "fitur5": {
+      "title": "LifeStyle",
+      "frontDescription": "Concert tickets, lucky draws, and train tickets available",
+      "backDescription": "From train tickets, concert tickets, to prize draws, they're all available for you."
+    },
+    "fitur6": {
+      "title": "Pay & Buy",
+      "frontDescription": "Can pay bills for dozens of services",
+      "backDescription": "One place to buy credit, pay electricity bills, and even zakat. There are reminders so you don't miss anything!"
+    },
+    "fitur7": {
+      "title": "QRIS",
+      "frontDescription": "Just scan or tap to pay",
+      "backDescription": "Paying for things becomes hassle-free, no queuing, secure, and practical."
+    },
+    "fitur8": {
+      "title": "TapCash",
+      "frontDescription": "Pay tolls and parking with just a tap",
+      "backDescription": "Just tap your card to your phone to check and top up your balance. With Express Top Up, you don't even need to log in."
+    }
+  },
+  "FinancialDimensions": {
+    "title": "Get to Know the 3 Financial Dimensions",
+    "description": "wondr is ready to help with every financial dimension: current transactions, tracking past money flows, and investments for the future.",
+    "transaksiTitle": "Transaction",
+    "transaksiDesc": "Various conveniences to send money, shop, and pay bills.",
+    "insightTitle": "Insight",
+    "insightDesc": "Monitor your income and expenses, and get financial recommendations that suit you.",
+    "growthTitle": "Growth",
+    "growthDesc": "Protect and grow your assets with various instruments for a secure future."
+  },
+  "footer": {
+    "appStore": "Download In App Store",
+    "playStore": "Download In Play Store",
+    "informasi": "Need futher information?",
+    "kantorPusat": "Head Office",
+    "license": "PT Bank Negara Indonesia (Persero) Tbk. is licensed and supervised by the Financial Services Authority (OJK) and Bank Indonesia (BI), and is a participant in the Deposit Insurance Corporation (LPS).",
+    "copyRight": "© Copyright 2025 PT. Bank Negara Indonesia (Persero), Tbk.",
+    "privacyPolicy": "Privacy Policy",
+    "securityTips": "Transaction Security Tips",
+    "tandc": "Terms and Conditions"
+  },
+  "Loans": {
+    "headline": "Flexible loans, fast access, friendly interest rates!",
+    "ubahTitle": "Change Installment",
+    "ubahHeading": "Make bill payments lighter",
+    "ubahDesc": "Have a large bill? Make it lighter by converting it to installments. Tenor options up to 36 months are available.",
+    "cashTitle": "Card to Cash",
+    "cashHeading": "Borrow funds from credit card limit",
+    "cashDesc": "Get access to cash loans from your credit card limit—directly disbursed to your account."
+  }
+}
