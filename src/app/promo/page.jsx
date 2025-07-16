@@ -7,7 +7,7 @@ export default async function Promo() {
   const response = await fetch("http://localhost:3000/promos");
   const data = await response.json();
 
-  console.log("render server form promo list");
+  console.log(`${new Date().getTime()} render server for promo list`);
 
   return <EmblaCarousel slides={data} options={OPTIONS} />;
 }
