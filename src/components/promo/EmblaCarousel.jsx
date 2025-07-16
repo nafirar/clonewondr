@@ -76,6 +76,7 @@ const EmblaCarousel = (props) => {
   }, []);
 
   useEffect(() => {
+    console.log("render embla carousel as client side component");
     if (!emblaApi) return;
 
     setTweenNodes(emblaApi);
@@ -91,46 +92,58 @@ const EmblaCarousel = (props) => {
   }, [emblaApi, tweenParallax]);
 
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          {slides.map((slide) => (
-            <div className="embla__slide" key={slide.id}>
-              <div className="embla__parallax">
-                <div className="embla__parallax__layer">
-                  <Link href={`/promo/${slide.id}`}>
-                    <img
-                      className="embla__slide__img embla__parallax__img"
-                      src={slide.url}
-                      alt="Your alt text"
-                    />
-                  </Link>
+    <>
+      <h3 className="text-3xl font-mono font-bold m-5">
+        Promo List (SSR Implementation)
+      </h3>
+
+      <div className="embla">
+        <div className="embla__viewport" ref={emblaRef}>
+          <div className="embla__container">
+            {slides.map((slide) => (
+              <div className="embla__slide" key={slide.id}>
+                <div className="embla__parallax">
+                  <div className="embla__parallax__layer">
+                    <Link href={`/promo/${slide.id}`}>
+                      <img
+                        className="embla__slide__img embla__parallax__img"
+                        src={slide.url}
+                        alt="Your alt text"
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="theme-light embla__controls">
-        <div className="embla__buttons">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+            ))}
+          </div>
         </div>
 
-        <div className="embla__dots">
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() => onDotButtonClick(index)}
-              className={"embla__dot".concat(
-                index === selectedIndex ? " embla__dot--selected" : ""
-              )}
+        <div className="theme-light embla__controls">
+          <div className="embla__buttons">
+            <PrevButton
+              onClick={onPrevButtonClick}
+              disabled={prevBtnDisabled}
             />
-          ))}
+            <NextButton
+              onClick={onNextButtonClick}
+              disabled={nextBtnDisabled}
+            />
+          </div>
+
+          <div className="embla__dots">
+            {scrollSnaps.map((_, index) => (
+              <DotButton
+                key={index}
+                onClick={() => onDotButtonClick(index)}
+                className={"embla__dot".concat(
+                  index === selectedIndex ? " embla__dot--selected" : ""
+                )}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

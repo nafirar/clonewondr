@@ -62,6 +62,12 @@ const Navbar = () => {
               >
                 Promo
               </Link>
+              <Link
+                href="/about"
+                className="px-4 py-3 text-gray-700 font-semibold text-base hover:text-orange-500 transition-colors duration-300 rounded-lg hover:bg-gray-50"
+              >
+                About
+              </Link>
             </nav>
           </div>
 
@@ -123,12 +129,6 @@ const Navbar = () => {
               </div>
 
               {/* Mobile Promo Nav */}
-              <a
-                href="/promo"
-                className="block px-4 py-3 text-base font-semibold text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-lg transition-all duration-300"
-              >
-                Promo
-              </a>
 
               {/* Mobile Actions */}
               <button

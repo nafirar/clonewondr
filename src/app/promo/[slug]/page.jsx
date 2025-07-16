@@ -23,7 +23,7 @@ export default function PromoDetail() {
   return (
     <div className="container mx-auto font-mono text-4xl">
       <h3 className="font-bold mb-5">
-        Promo Detail with slug: {promoDetail.id}
+        Promo Detail with slug: {promoDetail.id} (CSR Implementation)
       </h3>
       <p>
         <strong>Title</strong>: "{promoDetail.title}"
