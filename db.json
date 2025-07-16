@@ -1,0 +1,34 @@
+{
+  "promos": [
+    {
+      "id": "mc-boga",
+      "url": "https://wondr.bni.co.id/api/image/pn.mc-boga-070725-min_1751960126693.jpg",
+      "title": "Diskon Seru di MC Boga",
+      "description": "Nikmati potongan harga spesial di seluruh gerai MC Boga dengan kartu BNI kamu."
+    },
+    {
+      "id": "hut79-fitur79k",
+      "url": "https://wondr.bni.co.id/api/image/pn-hut79-fitur79k-080725-min_1751957548955.jpg",
+      "title": "HUT ke‑79: Bayar 79 K",
+      "description": "Rayakan HUT BNI ke‑79! Cukup bayar Rp 79.000 untuk transaksi terpilih menggunakan BNI Mobile Banking."
+    },
+    {
+      "id": "hut79-gopay25k",
+      "url": "https://wondr.bni.co.id/api/image/pn-hut79-gopay25k-080725-min_1751957528583.jpg",
+      "title": "Bonus GoPay 25 K",
+      "description": "Top up saldo GoPay minimal Rp 250.000 via BNI, dapatkan cashback Rp 25.000 langsung ke akunmu."
+    },
+    {
+      "id": "mc-hut79-cc",
+      "url": "https://wondr.bni.co.id/api/image/pn.mc-hut79-cc-090725-min_1751968178368.jpg",
+      "title": "Cicilan 0% Kartu Kredit",
+      "description": "Dapatkan cicilan 0% hingga 12 bulan untuk transaksi HUT ke‑79 BNI pakai kartu kredit BNI."
+    },
+    {
+      "id": "mc-hut79-generic",
+      "url": "https://wondr.bni.co.id/api/image/pn.mc-hut79-generic-090725-min_1751968118091.jpg",
+      "title": "Hadiah Spesial Ulang Tahun",
+      "description": "Tukarkan BNI Reward Points‑mu dengan hadiah eksklusif edisi HUT ke‑79, hanya di aplikasi BNI."
+    }
+  ]
+}
