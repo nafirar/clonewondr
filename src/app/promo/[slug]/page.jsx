@@ -11,7 +11,7 @@ export default function PromoDetail() {
     // level 1: CSR
     console.log(`render client promo detail with id slug: ${slug}`);
     async function fetchDetailUser(slug) {
-      const response = await fetch(`http://localhost:3000/promos/${slug}`);
+      const response = await fetch(`http://localhost:8080/promos/${slug}`);
       const data = await response.json();
       setPromoDetail(data);
     }
