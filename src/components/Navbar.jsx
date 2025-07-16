@@ -205,6 +205,12 @@ const Navbar = () => {
               >
                 Contact
               </Link>
+              <Link
+                href="/en/demo-intl"
+                className="px-4 py-3 text-gray-700 font-semibold text-base hover:text-orange-500 transition-colors duration-300 rounded-lg hover:bg-gray-50"
+              >
+                Demo Intl
+              </Link>
             </nav>
           </div>
 
