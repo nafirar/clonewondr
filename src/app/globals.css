@@ -26,7 +26,7 @@
   height: 100%;
   backface-visibility: hidden; /* THIS IS THE KEY TO HIDE THE FLIPPED SIDE */
   /* Add any common styling for both faces here, e.g., background-color, border-radius */
-  background-color: #f7f7f7; /* Assuming 'off-white' is this or similar */
+  background-color: white; /* Assuming 'off-white' is this or similar */
   border-radius: 1.5rem; /* For rounded-3xl */
 }
 
@@ -44,10 +44,10 @@
 }
 
 .flip-card-front {
-  background-color: white;
+  background-color: #f7f7f7;
 }
 .flip-card-back {
-  background-color: white;
+  background-color: #f7f7f7;
 }
 
 @theme inline {
@@ -65,9 +65,10 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-site);
+  color: var(--text-high-contrast);
+  font-size: 1.6rem;
+  line-height: 1.65;
 }
 
 .swiper-slide {
@@ -95,12 +96,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
-body {
-  background-color: var(--background-site);
-  color: var(--text-high-contrast);
-  font-size: 1.6rem;
-  line-height: 1.65;
-}
+
 .theme-light {
   --brand-primary: rgb(47, 112, 193);
   --brand-secondary: rgb(116, 97, 195);

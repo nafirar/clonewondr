@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
 import Join from "@/components/Join";
+import BerbagiTransaksiSwiper from "@/components/berbagiTransaksiSlider";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <Carousel />
       <FinancialDimensions />
+      <BerbagiTransaksiSwiper />
       <Insight />
       <InvesmentIntro />
       <Loans />

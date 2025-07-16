@@ -85,7 +85,7 @@ export default function BerbagiTransaksiSwiper() {
           className="swiper-horizontal mt-4 md:mt-10 pb-2 swiper-backface-hidden"
           style={{ paddingBottom: "8px" }}
           slidesPerView={"auto"} // Important for horizontal spacing in Swiper
-          spaceBetween={16} // Adjust as needed between cards
+          spaceBetween={25} // Adjust as needed between cards
         >
           {/* Map over your cardsData to render each TransferCard in its own SwiperSlide */}
           {cardsData.map((card) => (

@@ -10,15 +10,17 @@ export default function BerbagiTransaksiCard({ data }) {
   };
   return (
     <div
-      className="2xl:!h-[550px] 2xl:!max-w-[400px] xl:!h-[465px] md:!h-[420px] !h-[272px] !my-2 perspective-container"
-      style={{ width: "194.5px" }}
+      className="2xl:!h-[550px] 2xl:!max-w-[400px] xl:!h-[465px] md:!h-[420px] !h-[272px] !my-2 perspective-container rounded-3xl md:rounded-4xl"
+      style={{
+        width: "330px",
+      }}
     >
       <div
         className={`relative w-full h-full pr-4 flip-card-inner ${
           isExpanded ? "is-expanded" : ""
         }`}
       >
-        <div className="absolute w-full h-full bg-off-white rounded-3xl md:rounded-4xl flex flex-col justify-between [backface-visibility:hidden] min-h-[272px] md:min-h-[420px] flip-card-front">
+        <div className="absolute w-full h-full rounded-3xl md:rounded-4xl flex flex-col justify-between [backface-visibility:hidden] min-h-[272px] md:min-h-[420px] flip-card-front">
           <div className="px-4 pt-6 lg:px-6 text-left">
             <h3 className="text-xs md:text-sm xl:text-base font-light text-black">
               {data.title}
@@ -71,7 +73,7 @@ export default function BerbagiTransaksiCard({ data }) {
             </h3>
             <div className="text-sm md:text-lg lg:text-2xl font-light font-normal text-black !leading-[140%] mt-1 lg:mt-[10px] mb-6">
               <div className="ql-content-wrapper">
-                <div className="ql-content ql-editor text-black font-normal">
+                <div className="ql-content ql-editor font-light text-blac">
                   <p>{data.backDescription}</p>
                 </div>
               </div>
