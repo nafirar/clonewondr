@@ -8,6 +8,7 @@ import {
   usePrevNextButtons,
 } from "./EmblaCarouselArrowButtons";
 import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
+import Link from "next/link";
 
 const TWEEN_FACTOR_BASE = 0.2;
 
@@ -93,15 +94,17 @@ const EmblaCarousel = (props) => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
+          {slides.map((slide) => (
+            <div className="embla__slide" key={slide.id}>
               <div className="embla__parallax">
                 <div className="embla__parallax__layer">
-                  <img
-                    className="embla__slide__img embla__parallax__img"
-                    src={`https://wondr.bni.co.id/api/image/pn.mc-hut79-generic-090725-min_1751968118091.jpg`}
-                    alt="Your alt text"
-                  />
+                  <Link href={`/promo/${slide.id}`}>
+                    <img
+                      className="embla__slide__img embla__parallax__img"
+                      src={slide.url}
+                      alt="Your alt text"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
